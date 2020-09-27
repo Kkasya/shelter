@@ -1,0 +1,18 @@
+.button-primary {
+  width: 20.7rem;
+  height: 5.2rem;
+  left: 36rem;
+  top: 61.2rem;
+
+  background: $color-primary;
+  border-radius: 10rem;
+  border: none;
+
+  font-family: $font-family-button;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size-button;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-xl;
+}

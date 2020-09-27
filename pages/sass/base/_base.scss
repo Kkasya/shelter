@@ -1,10 +1,35 @@
-html {
-  font-size: $font-size-default;
-}
-body {
+* {
   margin: 0;
-  width: $width-max;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-h1 {
-  opacity: 0;
-}
+html {
+    font-size: $font-size-default;
+  }
+  body {
+    width: $width-max;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    opacity: 0;
+  }
+  h2 {
+    font-family: $font-family-button;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size-h2;
+    line-height: 130%;
+    color: $color-light-xl;
+  }
+  paragraph-l {
+    font-family: $font-family-text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size-paragraph-l;
+    line-height: 160%;
+    color: $color-dark-s;
+  }

@@ -1,11 +1,13 @@
 .header {
-  background: aqua;
-
-  height-max: $height-narrow;
+  padding-top: 6.4rem;
 }
-.wrapper {
-  max-width: $width-content-default;
-  margin: auto;
+.screen-first {
+  background: url(assets/images/noise_lines_transparent@2X.png),
+  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.header__wrapper {
+  height: $height-narrow;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +15,8 @@
 .logo {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 6rem;
 }
 .logo__title {
   color: $color-primary;
@@ -24,27 +28,23 @@
 .logo__subtitle {
   color: $color-light-xl;
   font-size: 1.3rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
   line-height: 110%;
   font-family: $font-family-text, Verdana, sans-serif;
+  padding-left: 0.4rem;
 }
 .header__navigation {
 
 }
 .navigation {
-
   display: flex;
   width: $width-navigation;
-
 }
 .navigation__item {
   display: flex;
   justify-content: space-around;
-  margin: 0;
-  padding: 0;
   width: 100%;
   white-space: nowrap;
-
 }
 .navigation__link {
   color: $color-light-xl;
@@ -52,7 +52,9 @@
   list-style: none;
   font-size: 1.5rem;
   line-height: 160%;
-
+}
+.navigation__link_active {
+  border-bottom: solid 3px $color-primary;
 }
 .navigation__link_disabled {
   margin-left: 30px;

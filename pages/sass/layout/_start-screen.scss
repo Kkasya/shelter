@@ -1,0 +1,18 @@
+.start-screen {
+
+}
+.start-screen__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 46rem;
+  height: 32.1rem;
+}
+.start-screen-puppy img {
+  margin-top: 6rem;
+}
