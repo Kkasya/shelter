@@ -7,9 +7,10 @@
 }
 html {
     font-size: $font-size-default;
+  font-family: $font-family-text;
   }
   body {
-    width: $width-max;
+    width: 100%;
   }
   a {
     text-decoration: none;
@@ -18,18 +19,9 @@ html {
     opacity: 0;
   }
   h2 {
-    font-family: $font-family-button;
-    font-style: normal;
-    font-weight: normal;
-    font-size: $font-size-h2;
-    line-height: 130%;
-    color: $color-light-xl;
+    @extend %font-add;
+    @include font($size: $font-size-h2, $height: 130%);
   }
   paragraph-l {
-    font-family: $font-family-text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: $font-size-paragraph-l;
-    line-height: 160%;
-    color: $color-dark-s;
+    @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-s);
   }
