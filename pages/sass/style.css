@@ -1,4 +1,4 @@
-.logo__title, .button-primary, h2 {
+.logo__title, .button-primary, h3, h2 {
   font-family: Georgia, Verdana, sans-serif;
 }
 
@@ -35,12 +35,21 @@ h2 {
   color: #FFFFFF;
 }
 
+h3 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 130%;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
+
 paragraph-l {
   font-size: 1.5rem;
   font-weight: normal;
   font-style: normal;
   line-height: 160%;
-  color: #CDCDCD;
+  color: #4C4C4C;
 }
 
 .button-primary {
@@ -57,6 +66,9 @@ paragraph-l {
   line-height: 130%;
   color: #4C4C4C;
   letter-spacing: 0.06em;
+}
+.button-primary:hover {
+  background: #FDDCC4;
 }
 
 .header {
@@ -151,6 +163,36 @@ paragraph-l {
 
 .start-screen-puppy {
   padding-top: 3.8rem;
+}
+
+.about-content {
+  background-color: #FFFFFF;
+  margin-top: -4px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+
+.about_text {
+  width: 43.3rem;
+  padding-left: 0.6rem;
+}
+
+.about_text_h3 {
+  width: 37rem;
+}
+
+.about_text_p {
+  padding-top: 2.5rem;
+  width: 100%;
+}
+
+.about_pets {
+  padding-right: 11.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,4 +11,8 @@
   @include font($size: $font-size-button, $height: 130%, $color: $color-dark-xl);
   @extend %font-add;
   letter-spacing: 0.06em;
+
+  &:hover {
+    background: $color-primary-light;
+  }
 }

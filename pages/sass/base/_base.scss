@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 html {
-    font-size: $font-size-default;
+  font-size: $font-size-default;
   font-family: $font-family-text;
   }
   body {
@@ -22,6 +22,12 @@ html {
     @extend %font-add;
     @include font($size: $font-size-h2, $height: 130%);
   }
+  h3 {
+    @extend %font-add;
+    @include font($size: 3.5rem, $height: 130%, $color: $color-dark-l);
+    letter-spacing: 0.06em;
+  }
+
   paragraph-l {
-    @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-s);
+    @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-xl);
   }
