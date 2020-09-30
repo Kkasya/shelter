@@ -1,3 +1,27 @@
 %font-add {
   font-family: $font-family-button, Verdana, sans-serif;
 }
+%button {
+  width: 20.7rem;
+  height: 5.2rem;
+  left: 36rem;
+  top: 61.2rem;
+  border-radius: 10rem;
+  @include font($size: $font-size-button, $height: 130%, $color: $color-dark-xl);
+  @extend %font-add;
+  letter-spacing: 0.06em;
+}
+
+%arrow {
+  border: 3px solid $color-primary;
+  border-radius: 100%;
+  background: none;
+  max-width: 5.2rem;
+  max-height: 5.2rem;
+  margin-top: 19rem;
+  padding: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

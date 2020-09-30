@@ -1,4 +1,18 @@
 .wrapper {
-  max-width: $width-content-default;
+  max-width: $width-wrapper-default;
   margin: 0 auto;
+}
+.header__wrapper {
+  max-width: $width-content-default;
+}
+.start-screen__wrapper {
+  max-width: $width-content-default;
+}
+.pets__wrapper {
+  background: $color-light-l;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
 }

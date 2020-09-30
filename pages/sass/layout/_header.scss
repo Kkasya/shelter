@@ -1,6 +1,5 @@
 .header {
   padding-top: 6rem;
-
 }
 .screen-first {
   background: url('../../assets/images/noise_transparent@2x.png') repeat,
@@ -28,9 +27,6 @@
   @include font($size: 1.3rem, $height: 110%, $color: $color-light-xl);
   letter-spacing: 0.1em;
   padding-left: 0.4rem;
-}
-.header__navigation {
-
 }
 .navigation {
   display: flex;

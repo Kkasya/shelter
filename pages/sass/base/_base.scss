@@ -31,3 +31,12 @@ html {
   paragraph-l {
     @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-xl);
   }
+  paragraph-s {
+    @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-s);
+  }
+
+  pets-card-title {
+    @extend %font-add;
+    @include font($size: 2rem, $height: 2.3rem, $color: $color-dark-l);
+    letter-spacing: 0.06em;
+  }
