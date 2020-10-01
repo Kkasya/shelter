@@ -1,0 +1,25 @@
+.donation {
+  display: flex;
+  justify-content: space-between;
+  padding: 7.7rem 18.2rem 11.1rem 18.2rem;
+  &__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 38rem;
+  }
+
+  span {
+    display: block;
+  };
+  &_img {
+    padding: 1.3rem 0 1.5rem;
+  }
+  h5 {
+    padding: 1.8rem 0 1.6rem;
+  }
+  donation-description {
+    padding-top: 1.7rem;
+  }
+}
+

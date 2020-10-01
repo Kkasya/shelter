@@ -1,4 +1,4 @@
-.logo__title, pets-card-title, h4, h3, h2, .button-secondary, .button-primary {
+.logo__title, pets-card-title, h5, h4, h3, h2, .button-secondary, .button-primary {
   font-family: Georgia, Verdana, sans-serif;
 }
 
@@ -85,6 +85,15 @@ h4 {
   letter-spacing: 0.06em;
 }
 
+h5 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 110%;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
+
 paragraph-l {
   font-size: 1.5rem;
   font-weight: normal;
@@ -110,6 +119,14 @@ pets-card-title {
   letter-spacing: 0.06em;
 }
 
+donation-description {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 150%;
+  color: #B2B2B2;
+}
+
 .button-primary {
   background: #F1CDB3;
   border: none;
@@ -133,6 +150,15 @@ pets-card-title {
   margin: 6.2rem 0 10rem;
   width: 26.1rem;
 }
+.card {
+  border-radius: 0.9rem;
+  width: 34.9rem;
+  height: 4.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .header {
   padding-top: 6rem;
 }
@@ -209,16 +235,15 @@ pets-card-title {
 }
 
 .header__wrapper {
-  max-width: 120rem;
+  padding: 0 4rem 0 4rem;
 }
 
 .start-screen__wrapper {
-  max-width: 120rem;
+  padding: 0 4rem 0 4rem;
 }
 
 .pets__wrapper {
   background: #F6F6F6;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +315,7 @@ pets-card-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 6.45rem 10rem 6.65rem;
+  padding: 0 2.45rem 10rem 2.65rem;
 }
 .help__list_item {
   padding: 6rem 6rem 0;
@@ -336,6 +361,30 @@ pets-card-title {
 }
 .pets__title {
   text-align: center;
+}
+
+.donation {
+  display: flex;
+  justify-content: space-between;
+  padding: 7.7rem 18.2rem 11.1rem 18.2rem;
+}
+.donation__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 38rem;
+}
+.donation span {
+  display: block;
+}
+.donation_img {
+  padding: 1.3rem 0 1.5rem;
+}
+.donation h5 {
+  padding: 1.8rem 0 1.6rem;
+}
+.donation donation-description {
+  padding-top: 1.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

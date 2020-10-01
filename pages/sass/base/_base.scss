@@ -32,6 +32,11 @@ html {
     @include font($size: 2rem, $height: 115%, $color: $color-dark-l);
     letter-spacing: 0.06em;
   }
+ h5 {
+  @extend %font-add;
+  @include font($size: 1.5rem, $height: 110%, $color: $color-dark-l);
+  letter-spacing: 0.06em;
+}
 
   paragraph-l {
     @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-xl);
@@ -44,4 +49,8 @@ html {
     @extend %font-add;
     @include font($size: 2rem, $height: 2.3rem, $color: $color-dark-l);
     letter-spacing: 0.06em;
+  }
+
+  donation-description {
+    @include font($size: 1.2rem, $height: 150%, $color: $color-dark-m, $style: italic);
   }
