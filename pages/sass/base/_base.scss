@@ -27,6 +27,11 @@ html {
     @include font($size: 3.5rem, $height: 130%, $color: $color-dark-l);
     letter-spacing: 0.06em;
   }
+  h4 {
+    @extend %font-add;
+    @include font($size: 2rem, $height: 115%, $color: $color-dark-l);
+    letter-spacing: 0.06em;
+  }
 
   paragraph-l {
     @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-xl);
