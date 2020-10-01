@@ -4,7 +4,7 @@
   border: none;
 
   &:hover {
-    background: $color-primary-light;
+    @extend %hover-button;
   }
 }
 
@@ -19,16 +19,26 @@
   &_reverse {
     @extend %arrow;
     transform: rotate(180deg);
+    &:hover {
+      @extend %hover-button;
+    }
+  }
+  &:hover {
+    @extend %hover-button;
   }
 
 }
 .learn-more {
   width: 18.7rem;
   margin-bottom: 3rem;
+  background: none;
 }
 .button-rest {
   margin: 6.2rem 0 10rem;
   width: 26.1rem;
+  &:hover {
+    @extend %hover-button;
+  }
 }
 
 
