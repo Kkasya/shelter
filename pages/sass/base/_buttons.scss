@@ -32,6 +32,9 @@
   width: 18.7rem;
   margin-bottom: 3rem;
   background: none;
+  &:hover {
+    @extend %hover-button;
+  }
 }
 .button-rest {
   margin: 6.2rem 0 10rem;
