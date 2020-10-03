@@ -15,6 +15,7 @@
   color: #4C4C4C;
   letter-spacing: 0.06em;
   cursor: pointer;
+  outline: none;
 }
 
 .slider-button_reverse, .slider-button {
@@ -29,12 +30,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  outline: none;
 }
 
-.button-rest:hover, .slider-button:hover, .slider-button_reverse:hover, .button-primary:hover {
+.button-rest:hover, .learn-more:hover, .slider-button:hover, .slider-button_reverse:hover, .button-primary:hover {
   background: #FDDCC4;
   border: none;
   cursor: pointer;
+  outline: none;
+  transition-duration: 0.5s;
 }
 
 * {
@@ -148,7 +152,6 @@ donation-description {
   margin-bottom: 3rem;
   background: none;
 }
-
 .button-rest {
   margin: 6.2rem 0 10rem;
   width: 26.1rem;
@@ -163,15 +166,13 @@ donation-description {
 }
 
 .header {
-  padding-top: 6rem;
-}
-
-.screen-first {
-  background: url("../../assets/images/noise_transparent@2x.png") repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  padding: 3rem 0 1rem 0;
+  background: #FFFFFF;
+  position: sticky;
+  top: 0;
 }
 
 .header__wrapper {
-  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,7 +182,6 @@ donation-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 6rem;
 }
 
 .logo__title {
@@ -189,7 +189,7 @@ donation-description {
   font-weight: normal;
   font-style: normal;
   line-height: 110%;
-  color: #F1CDB3;
+  color: #545454;
   letter-spacing: 0.06em;
 }
 
@@ -198,20 +198,19 @@ donation-description {
   font-weight: normal;
   font-style: normal;
   line-height: 110%;
-  color: #FFFFFF;
+  color: #292929;
   letter-spacing: 0.1em;
-  padding-left: 0.4rem;
+  padding: 1rem 0 0 0.4rem;
 }
 
 .navigation {
   display: flex;
-  width: 44.3rem;
 }
 
 .navigation__item {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  margin-left: 3.6rem;
   white-space: nowrap;
 }
 
@@ -220,16 +219,12 @@ donation-description {
   font-weight: normal;
   font-style: normal;
   line-height: 160%;
-  color: #FFFFFF;
+  color: #545454;
 }
 
 .navigation__link_active {
-  border-bottom: solid 3px #F1CDB3;
-}
-
-.navigation__link_disabled {
-  margin-left: 30px;
-  color: #CDCDCD;
+  border-bottom: solid 0.3rem #F1CDB3;
+  color: #292929;
 }
 
 .wrapper {
@@ -239,6 +234,13 @@ donation-description {
 
 .header__wrapper {
   padding: 0 4rem 0 4rem;
+}
+
+.header-pets__wrapper {
+  padding: 0 4rem 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .start-screen__wrapper {

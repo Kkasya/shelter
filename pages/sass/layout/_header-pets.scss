@@ -1,0 +1,42 @@
+.header {
+  padding: 3rem 0 1rem 0;
+  background: $color-light-xl;
+  position: sticky;
+  top: 0;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo__title {
+  @extend %font-add;
+  @include font($size: 3.2rem, $height: 110%, $color: $color-dark-l);
+  letter-spacing: 0.06em;
+}
+.logo__subtitle {
+  @include font($size: 1.3rem, $height: 110%, $color: $color-dark-3xl);
+  letter-spacing: 0.1em;
+  padding: 1rem 0 0 0.4rem;
+}
+.navigation {
+  display: flex;
+}
+.navigation__item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3.6rem;
+  white-space: nowrap;
+}
+.navigation__link {
+  @include font($size: 1.5rem, $height: 160%, $color: $color-dark-l);
+}
+.navigation__link_active {
+  border-bottom: solid 0.3rem $color-primary;
+  color: $color-dark-3xl;
+}

@@ -10,16 +10,16 @@
 </head>
 <body>
 <header class="header">
-    <div class="wrapper header__wrapper">
+    <div class="wrapper header-pets__wrapper">
         <div class="logo">
             <p class="logo__title">Cozy House</p>
             <p class="logo__subtitle">Shelter for pets in Boston</p>
         </div>
         <div class="header__navigation">
             <ul class="navigation">
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">About the
+                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_disabled">About the
                     shelter</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_disabled">Our
+                <li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">Our
                     pets</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link navigation__link_disabled">Help the
                     shelter</a></li>
@@ -28,7 +28,46 @@
             </ul>
         </div>
     </div>
+    <h1>Cozy House</h1>
 </header>
+<section class="pets">
+    <div class="wrapper">
+        <div class="pets__wrapper">
+            <h3 class="pets__title">
+                <span>Our friends who</span>
+                <span>are looking for a house</span>
+            </h3>
+            <div class="pets__content">
+                <button class="slider-button">
+                    <object data="../../assets/icons/arrow.svg" type="image/svg+xml" class="button-arrow_icon"></object>
+                </button>
+                <div class="pets__cards">
+                    <div class="pets__cards_item">
+                        <img src="../../assets/images/pets-katrine.svg">
+                        <pets-card-title class="pets__cards_title">Katrine</pets-card-title>
+                        <button class="button-secondary learn-more">Learn more</button>
+                    </div>
+                    <div class="pets__cards_item">
+                        <img src="../../assets/images/pets-jennifer.svg">
+                        <pets-card-title class="pets__cards_title">Jennifer</pets-card-title>
+                        <button class="button-secondary learn-more">Learn more</button>
+                    </div>
+                    <div class="pets__cards_item">
+                        <img src="../../assets/images/pets-woody.svg">
+                        <pets-card-title class="pets__cards_title">Woody</pets-card-title>
+                        <button class="button-secondary learn-more">Learn more</button>
+                    </div>
+                </div>
+                <button class="slider-button_reverse">
+                    <object data="../../assets/icons/arrow.svg" type="image/svg+xml" class="button-arrow_icon"></object>
+                </button>
+            </div>
+            <div>
+                <button class="button-primary button-rest">Get to know the rest</button>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div class="wrapper">
         <div class="footer-section">
