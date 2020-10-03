@@ -26,8 +26,33 @@
   &:hover {
     @extend %hover-button;
   }
+}
+
+.slider-button-pets {
+  @extend %pagination-button;
+  @extend %font-add;
+  @include font($size: 2rem, $height: 115%, $color: $color-dark-3xl);
+  letter-spacing: 0.06em;
+  margin: 0 1rem 10rem 1rem;
+}
+.pagination {
+  &_active {
+    &:hover {
+      @extend %hover-button;
+    }
+  }
+  &_number {
+    background: $color-primary-light;
+    border: 3px solid $color-primary-light;
+  }
+  &_disabled:disabled {
+    color:  $color-dark-s;
+    border: 3px solid $color-dark-s;
+  }
+
 
 }
+
 .learn-more {
   width: 18.7rem;
   margin-bottom: 3rem;

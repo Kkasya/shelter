@@ -29,6 +29,20 @@
   outline: none;
 }
 
+%pagination-button {
+  border: 3px solid $color-primary;
+  border-radius: 100%;
+  background: none;
+  max-width: 5.2rem;
+  max-height: 5.2rem;
+  padding: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
 %hover-button {
   background: $color-primary-light;
   border: none;

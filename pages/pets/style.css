@@ -1,4 +1,4 @@
-.logo__title, pets-card-title, h5, h4, h3, h2, .button-secondary, .button-primary {
+.logo__title, .slider-button-pets, pets-card-title, h5, h4, h3, h2, .button-secondary, .button-primary {
   font-family: Georgia, Verdana, sans-serif;
 }
 
@@ -33,7 +33,21 @@
   outline: none;
 }
 
-.button-rest:hover, .learn-more:hover, .slider-button:hover, .slider-button_reverse:hover, .button-primary:hover {
+.slider-button-pets {
+  border: 3px solid #F1CDB3;
+  border-radius: 100%;
+  background: none;
+  max-width: 5.2rem;
+  max-height: 5.2rem;
+  padding: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-rest:hover, .learn-more:hover, .pagination_active:hover, .slider-button:hover, .slider-button_reverse:hover, .button-primary:hover {
   background: #FDDCC4;
   border: none;
   cursor: pointer;
@@ -147,6 +161,25 @@ donation-description {
 .slider-button_reverse {
   transform: rotate(180deg);
 }
+.slider-button-pets {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 115%;
+  color: #292929;
+  letter-spacing: 0.06em;
+  margin: 0 1rem 10rem 1rem;
+}
+
+.pagination_number {
+  background: #FDDCC4;
+  border: 3px solid #FDDCC4;
+}
+.pagination_disabled:disabled {
+  color: #CDCDCD;
+  border: 3px solid #CDCDCD;
+}
+
 .learn-more {
   width: 18.7rem;
   margin-bottom: 3rem;
@@ -294,6 +327,40 @@ donation-description {
 }
 .footer-section h5 {
   visibility: hidden;
+}
+
+.pets span {
+  display: block;
+}
+.pets__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 6rem 2rem 0 2rem;
+  border-radius: 9px;
+}
+.pets__cards_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FAFAFA;
+  border-radius: 9px;
+  margin: 0 2rem 3.3rem 2rem;
+}
+.pets__cards_item:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+.pets__cards_title {
+  margin: 2.8rem 0 3rem 0;
+}
+.pets__title {
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 2.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
