@@ -366,7 +366,7 @@ donation-description {
 .donation {
   display: flex;
   justify-content: space-between;
-  padding: 7.7rem 18.2rem 11.1rem 18.2rem;
+  padding: 7.7rem 18.2rem 9.6rem 18.2rem;
 }
 .donation__information {
   display: flex;
@@ -385,6 +385,47 @@ donation-description {
 }
 .donation donation-description {
   padding-top: 1.7rem;
+}
+
+.footer {
+  background: url(../../assets/images/noise_transparent@2X.png) repeat, radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer-section {
+  display: flex;
+  padding: 4rem 0 0 4rem;
+}
+.footer-section__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.8rem 16rem 6.2rem 0;
+}
+.footer-section__list:nth-child(3) {
+  margin: 0;
+  padding-right: 4rem;
+}
+.footer-section__list:nth-child(1) {
+  min-width: 27.9rem;
+}
+.footer-section__list:nth-child(2) {
+  min-width: 33rem;
+  margin-right: 13rem;
+}
+.footer-section__list_item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2.8rem;
+  align-items: center;
+}
+.footer-section h3 {
+  color: #FFFFFF;
+}
+.footer-section h4 {
+  color: #F1CDB3;
+}
+.footer-section h5 {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

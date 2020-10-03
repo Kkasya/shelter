@@ -1,7 +1,7 @@
 .donation {
   display: flex;
   justify-content: space-between;
-  padding: 7.7rem 18.2rem 11.1rem 18.2rem;
+  padding: 7.7rem 18.2rem 9.6rem 18.2rem;
   &__information {
     display: flex;
     flex-direction: column;
@@ -11,10 +11,11 @@
 
   span {
     display: block;
-  };
+  }
   &_img {
     padding: 1.3rem 0 1.5rem;
   }
+
   h5 {
     padding: 1.8rem 0 1.6rem;
   }
