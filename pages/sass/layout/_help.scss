@@ -1,3 +1,7 @@
+.help-content {
+  background: $color-light-xl;
+  padding-top: -10rem;
+}
 .help {
   display: flex;
   flex-direction: column;
@@ -8,7 +12,7 @@
     span {
       display: block;
     }
-    }
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;

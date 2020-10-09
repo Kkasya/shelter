@@ -1,4 +1,4 @@
-.logo__title, pets-card-title, h5, h4, h3, h2, .button-secondary, .button-primary {
+.logo__title, .slider-button-pets, pets-card-title, h5, h4, h3, h2, .button-secondary, .button-primary {
   font-family: Georgia, Verdana, sans-serif;
 }
 
@@ -33,7 +33,21 @@
   outline: none;
 }
 
-.button-rest:hover, .learn-more:hover, .slider-button:hover, .slider-button_reverse:hover, .button-primary:hover {
+.slider-button-pets {
+  border: 3px solid #F1CDB3;
+  border-radius: 100%;
+  background: none;
+  max-width: 5.2rem;
+  max-height: 5.2rem;
+  padding: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-rest:hover, .learn-more:hover, .pagination_active:hover, .slider-button:hover, .slider-button_reverse:hover, .button-primary:hover {
   background: #FDDCC4;
   border: none;
   cursor: pointer;
@@ -147,6 +161,25 @@ donation-description {
 .slider-button_reverse {
   transform: rotate(180deg);
 }
+.slider-button-pets {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 115%;
+  color: #292929;
+  letter-spacing: 0.06em;
+  margin: 0 1rem 10rem 1rem;
+}
+
+.pagination_number {
+  background: #FDDCC4;
+  border: 3px solid #FDDCC4;
+}
+.pagination_disabled:disabled {
+  color: #CDCDCD;
+  border: 3px solid #CDCDCD;
+}
+
 .learn-more {
   width: 18.7rem;
   margin-bottom: 3rem;
@@ -237,23 +270,25 @@ donation-description {
 
 .wrapper {
   max-width: 128rem;
+  padding: 0 4rem;
   margin: 0 auto;
 }
 
-.header__wrapper {
-  padding: 0 4rem 0 4rem;
-}
-
-.start-screen__wrapper {
-  padding: 0 4rem 0 4rem;
+.header-pets__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pets__wrapper {
-  background: #F6F6F6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 7.7rem;
+}
+
+.help__wrapper {
+  padding-top: 9.8rem;
 }
 
 .start-screen__wrapper {
@@ -273,18 +308,19 @@ donation-description {
 
 .start-screen-puppy {
   padding-top: 3.8rem;
+  margin-bottom: -2.5px;
 }
 
 .about-content {
   background-color: #FFFFFF;
-  margin-top: -4px;
+  padding-bottom: 10.1rem;
+  padding-top: 8rem;
 }
 
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8rem;
 }
 
 .about_text {
@@ -303,6 +339,11 @@ donation-description {
 
 .about_pets {
   padding-right: 11.3rem;
+}
+
+.help-content {
+  background: #FFFFFF;
+  padding-top: -10rem;
 }
 
 .help {
@@ -333,7 +374,7 @@ donation-description {
 }
 
 .pets {
-  padding: 9.8rem;
+  background: #F6F6F6;
 }
 .pets__content {
   display: flex;
@@ -369,10 +410,14 @@ donation-description {
   text-align: center;
 }
 
+.donation-content {
+  background: #F6F6F6;
+}
+
 .donation {
   display: flex;
   justify-content: space-between;
-  padding: 7.7rem 18.2rem 9.6rem 18.2rem;
+  padding: 7.7rem 14.2rem 9.5rem 14.2rem;
 }
 .donation__information {
   display: flex;
@@ -399,7 +444,7 @@ donation-description {
 
 .footer-section {
   display: flex;
-  padding: 4rem 0 0 4rem;
+  padding-top: 4rem;
 }
 .footer-section__list {
   display: flex;

@@ -1,26 +1,28 @@
 .wrapper {
   max-width: $width-wrapper-default;
-  //padding: 0 4rem 0 4rem;
+  padding: 0 4rem;
   margin: 0 auto;
 }
 .header__wrapper {
-  padding: 0 4rem 0 4rem;
 }
 .header-pets__wrapper{
-  padding: 0 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .start-screen__wrapper {
-  padding: 0 4rem 0 4rem;
 
 }
 .pets__wrapper {
-  background: $color-light-l;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 7.7rem;
+}
+
+.help__wrapper {
+  padding-top: 9.8rem;
+}
+.donation__wrapper {
+
 }

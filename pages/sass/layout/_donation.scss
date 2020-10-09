@@ -1,7 +1,10 @@
+.donation-content {
+  background: $color-light-l;
+}
 .donation {
   display: flex;
   justify-content: space-between;
-  padding: 7.7rem 18.2rem 9.6rem 18.2rem;
+  padding: 7.7rem 14.2rem 9.5rem 14.2rem;
   &__information {
     display: flex;
     flex-direction: column;
