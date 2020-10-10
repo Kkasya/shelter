@@ -6,6 +6,7 @@
   &:hover {
     @extend %hover-button;
   }
+
 }
 
 .button-secondary {
@@ -49,8 +50,6 @@
     color:  $color-dark-s;
     border: 3px solid $color-dark-s;
   }
-
-
 }
 
 .learn-more {
@@ -76,4 +75,9 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.button-centered {
+  @include media-tablet {
+    text-align: center;
+  };
 }

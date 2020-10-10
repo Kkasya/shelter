@@ -2,6 +2,12 @@
   max-width: $width-wrapper-default;
   padding: 0 4rem;
   margin: 0 auto;
+  @include media-tablet {
+    padding: 0 29px 0 30px;
+  };
+  @include media-mobile {
+    padding: 0 10px;
+  };
 }
 .header__wrapper {
 }
@@ -10,9 +16,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.start-screen__wrapper {
+;
 
-}
 .pets__wrapper {
   display: flex;
   flex-direction: column;

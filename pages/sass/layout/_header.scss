@@ -1,5 +1,8 @@
 .header {
   padding-top: 6rem;
+  @include media-tablet {
+  padding-top: 30px;
+};
 }
 .screen-first {
   background: url('../../assets/images/noise_transparent@2x.png') repeat,
@@ -17,6 +20,9 @@
   flex-direction: column;
   justify-content: space-between;
   height: 6rem;
+  @include media-tablet {
+
+  };
 }
 .logo__title {
   @extend %font-add;
@@ -31,6 +37,9 @@
 .navigation {
   display: flex;
   width: $width-navigation;
+  @include media-mobile {
+    display: none;
+  };
 }
 .navigation__item {
   display: flex;

@@ -21,11 +21,16 @@ html {
   h2 {
     @extend %font-add;
     @include font($size: $font-size-h2, $height: 130%);
+    @include media-mobile {
+      @include font($size: 25px, $height: 130%);
+      letter-spacing: 0.06em;
+    }
   }
   h3 {
     @extend %font-add;
     @include font($size: 3.5rem, $height: 130%, $color: $color-dark-l);
     letter-spacing: 0.06em;
+
   }
   h4 {
     @extend %font-add;

@@ -3,6 +3,9 @@
   padding-bottom: 10.1rem;
 
   padding-top: 8rem;
+  @include media-tablet {
+    //padding-top: 18rem;
+  }
 }
 .about {
   display: flex;
