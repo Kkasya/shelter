@@ -173,8 +173,18 @@ donation-description {
   background: #FFFFFF;
 }
 
+@media (max-width: 767px) {
+  .slider-button {
+    margin: 2rem 4rem 0 4rem;
+  }
+}
 .slider-button_reverse {
   transform: rotate(180deg);
+}
+@media (max-width: 767px) {
+  .slider-button_reverse {
+    margin: 2rem 4rem 0 4rem;
+  }
 }
 .slider-button-pets {
   font-size: 2rem;
@@ -184,6 +194,11 @@ donation-description {
   color: #292929;
   letter-spacing: 0.06em;
   margin: 0 1rem 10rem 1rem;
+}
+@media (max-width: 1279px) {
+  .slider-button-pets {
+    margin: 0 -5rem 10rem 0;
+  }
 }
 
 .pagination_number {
@@ -203,6 +218,12 @@ donation-description {
 .button-rest {
   margin: 6.2rem 0 10rem;
   width: 26.1rem;
+}
+@media (max-width: 767px) {
+  .button-rest {
+    margin-top: -1.7rem;
+    margin-bottom: 4.2rem;
+  }
 }
 .card {
   border-radius: 0.9rem;
@@ -360,6 +381,11 @@ donation-description {
   flex-direction: column;
   align-items: center;
   padding-top: 7.7rem;
+}
+@media (max-width: 767px) {
+  .pets__wrapper {
+    padding-top: 3.8rem;
+  }
 }
 
 .help__wrapper {
@@ -538,6 +564,15 @@ donation-description {
   display: flex;
   padding: 6.2rem 4.5rem 0 4.5rem;
 }
+@media (max-width: 767px) {
+  .pets__content {
+    padding-top: 4.2rem;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+}
 .pets span {
   display: block;
 }
@@ -547,6 +582,11 @@ donation-description {
   justify-content: space-between;
   border-radius: 9px;
 }
+@media (max-width: 1279px) {
+  .pets__cards {
+    padding: 0 1.2rem 0 1.2rem;
+  }
+}
 .pets__cards_item {
   display: flex;
   flex-direction: column;
@@ -554,8 +594,29 @@ donation-description {
   background: #FAFAFA;
   border-radius: 9px;
 }
+@media (max-width: 767px) {
+  .pets__cards_item {
+    order: 0;
+  }
+}
+@media (max-width: 1279px) {
+  .pets__cards_item:nth-child(3) {
+    display: none;
+  }
+}
 .pets__cards_item:nth-child(2) {
   margin: 0 9rem 0 9rem;
+}
+@media (max-width: 1279px) {
+  .pets__cards_item:nth-child(2) {
+    margin-left: 4rem;
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .pets__cards_item:nth-child(2) {
+    display: none;
+  }
 }
 .pets__cards_item:hover {
   background: #FFFFFF;
@@ -564,8 +625,26 @@ donation-description {
 .pets__cards_title {
   margin: 2.8rem 0 3rem 0;
 }
+@media (max-width: 767px) {
+  .pets__cards_title {
+    padding: 3rem 0 3rem 0;
+    margin: 0;
+  }
+}
 .pets__title {
   text-align: center;
+}
+@media (max-width: 1279px) {
+  .pets__title {
+    margin-top: 0.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    order: 1;
+    margin-bottom: 60px;
+  }
 }
 
 .donation-content {

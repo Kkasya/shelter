@@ -17,9 +17,15 @@
 }
 .slider-button {
   @extend %arrow;
+  @include media-mobile {
+    margin: 2rem 4rem 0 4rem;
+  }
   &_reverse {
     @extend %arrow;
     transform: rotate(180deg);
+    @include media-mobile {
+      margin: 2rem 4rem 0 4rem;
+    }
     &:hover {
       @extend %hover-button;
     }
@@ -35,6 +41,11 @@
   @include font($size: 2rem, $height: 115%, $color: $color-dark-3xl);
   letter-spacing: 0.06em;
   margin: 0 1rem 10rem 1rem;
+  @include media-tablet {
+    margin: 0 -5rem 10rem 0;
+  }
+
+
 }
 .pagination {
   &_active {
@@ -63,6 +74,10 @@
 .button-rest {
   margin: 6.2rem 0 10rem;
   width: 26.1rem;
+  @include media-mobile {
+    margin-top: -1.7rem;
+    margin-bottom: 4.2rem;
+  }
   &:hover {
     @extend %hover-button;
   }
