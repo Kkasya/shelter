@@ -30,6 +30,9 @@ html {
     @extend %font-add;
     @include font($size: 3.5rem, $height: 130%, $color: $color-dark-l);
     letter-spacing: 0.06em;
+    @include media-mobile {
+      font-size: 2.5rem;
+    }
 
   }
   h4 {
@@ -45,6 +48,7 @@ html {
 
   paragraph-l {
     @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-xl);
+
   }
   paragraph-s {
     @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-s);

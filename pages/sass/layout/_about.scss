@@ -1,28 +1,53 @@
 .about-content {
   background-color: $color-light-xl;
   padding-bottom: 10.1rem;
-
   padding-top: 8rem;
   @include media-tablet {
-    //padding-top: 18rem;
-  }
+    padding-bottom: 9.8rem;
+  };
+  @include media-mobile {
+    padding: 4rem 0 4rem 1rem;
+  };
 }
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include media-tablet {
+    flex-direction: column-reverse;
+};
 }
 .about_text {
   max-width: 43.3rem;
   padding-left: 0.6rem;
+  @include media-tablet {
+    padding: 0.1rem 1rem 8rem 0;
+    width: auto;
+  };
+  @include media-mobile {
+    padding-bottom: 4.2rem;
+  };
 }
 .about_text_h3 {
   width: 37rem;
+  @include media-mobile {
+    width: auto;
+    text-align: center;
+    padding-bottom: 0.3rem;
+  };
 }
 .about_text_p {
   padding-top: 2.5rem;
   width: 100%;
+  @include media-mobile {
+    padding: 2.2rem 0.5rem 0 0.5rem;
+    text-align: justify;
+  };
 }
 .about_pets {
   padding-right: 11.3rem;
+  @include media-tablet {
+    padding-right: 0.7rem;
+  };
 }

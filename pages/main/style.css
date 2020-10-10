@@ -106,6 +106,11 @@ h3 {
   color: #545454;
   letter-spacing: 0.06em;
 }
+@media (max-width: 767px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
 
 h4 {
   font-size: 2rem;
@@ -425,28 +430,73 @@ donation-description {
   padding-bottom: 10.1rem;
   padding-top: 8rem;
 }
+@media (max-width: 1279px) {
+  .about-content {
+    padding-bottom: 9.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-content {
+    padding: 4rem 0 4rem 1rem;
+  }
+}
+
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1279px) {
+  .about {
+    flex-direction: column-reverse;
+  }
 }
 
 .about_text {
   max-width: 43.3rem;
   padding-left: 0.6rem;
 }
+@media (max-width: 1279px) {
+  .about_text {
+    padding: 0.1rem 1rem 8rem 0;
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .about_text {
+    padding-bottom: 4.2rem;
+  }
+}
 
 .about_text_h3 {
   width: 37rem;
+}
+@media (max-width: 767px) {
+  .about_text_h3 {
+    width: auto;
+    text-align: center;
+    padding-bottom: 0.3rem;
+  }
 }
 
 .about_text_p {
   padding-top: 2.5rem;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .about_text_p {
+    padding: 2.2rem 0.5rem 0 0.5rem;
+    text-align: justify;
+  }
+}
 
 .about_pets {
   padding-right: 11.3rem;
+}
+@media (max-width: 1279px) {
+  .about_pets {
+    padding-right: 0.7rem;
+  }
 }
 
 .help-content {
