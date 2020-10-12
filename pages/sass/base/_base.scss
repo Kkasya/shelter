@@ -46,12 +46,16 @@ html {
   @extend %font-add;
   @include font($size: 1.5rem, $height: 110%, $color: $color-dark-l);
   letter-spacing: 0.06em;
+   @include media-mobile {
+     line-height: 160%;
+     letter-spacing: 0;
+     font-family: Arial;
+   }
 }
-
   paragraph-l {
     @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-xl);
-
   }
+
   paragraph-s {
     @include font($size: $font-size-paragraph-l, $height: 160%, $color: $color-dark-s);
   }

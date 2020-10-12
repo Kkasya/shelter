@@ -4,26 +4,66 @@
 .donation {
   display: flex;
   justify-content: space-between;
-  padding: 7.7rem 14.2rem 9.5rem 14.2rem;
+  padding: 8rem 14.2rem 9.7rem 14.2rem;
+  @include media-tablet {
+    flex-direction: column-reverse;
+    padding: 8.1rem 10rem 9.8rem 10rem;
+  };
+  @include media-mobile {
+    padding: 0;
+  };
+
   &__information {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 38rem;
+    @include media-tablet {
+     // padding: 0;
+      margin-left: 6.4rem;
+    };
+    @include media-mobile {
+      margin: 0;
+      width: 30rem;
+    };
   }
 
   span {
     display: block;
+    @include media-mobile {
+      text-align: center;
+    };
   }
+
   &_img {
     padding: 1.3rem 0 1.5rem;
+    @include media-tablet {
+      padding: 0;
+    };
+    @include media-mobile {
+      padding: 0 0 4rem 2rem;
+    }
   }
 
   h5 {
-    padding: 1.8rem 0 1.6rem;
+    padding: 1.6rem 0 1.6rem;
+    @include media-tablet {
+      padding: 2rem 0 2rem 0;
+    };
+    @include media-mobile {
+      text-align: center;
+    }
   }
   donation-description {
-    padding-top: 1.7rem;
+    padding-top: 1.8rem;
+    @include media-tablet {
+      padding: 2.2rem 0 6rem 0;
+    };
+    @include media-mobile {
+      padding: 2.2rem 1rem 4.2rem 1rem;
+      display: flex;
+      text-align: justify;
+      align-items: center;
+    }
   }
 }
-

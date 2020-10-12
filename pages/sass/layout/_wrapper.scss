@@ -9,14 +9,12 @@
     padding: 0 10px;
   };
 }
-.header__wrapper {
-}
+
 .header-pets__wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-;
+};
 
 .pets__wrapper {
   display: flex;
@@ -26,14 +24,8 @@
   @include media-mobile {
     padding-top: 3.8rem;
   }
-
 }
-
-
 
 .help__wrapper {
   padding-top: 9.8rem;
-}
-.donation__wrapper {
-
 }

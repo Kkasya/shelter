@@ -90,6 +90,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @include media-mobile {
+    width: 28.1rem;
+    margin-left: 0.9rem;
+  }
 }
 .button-centered {
   @include media-tablet {
