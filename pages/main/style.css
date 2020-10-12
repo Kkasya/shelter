@@ -120,6 +120,15 @@ h4 {
   color: #545454;
   letter-spacing: 0.06em;
 }
+@media (max-width: 767px) {
+  h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 110%;
+    color: #545454;
+  }
+}
 
 h5 {
   font-size: 1.5rem;
@@ -538,9 +547,21 @@ donation-description {
 .help__text {
   text-align: center;
   margin-top: -1.8rem;
+  padding-bottom: 0.2rem;
 }
 .help__text span {
   display: block;
+}
+@media (max-width: 1279px) {
+  .help__text {
+    padding-bottom: 0.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .help__text {
+    margin-top: -5.6rem;
+    padding-bottom: 1.2rem;
+  }
 }
 .help__list {
   display: flex;
@@ -548,13 +569,42 @@ donation-description {
   justify-content: center;
   padding: 0 2.45rem 10rem 2.65rem;
 }
+@media (max-width: 1279px) {
+  .help__list {
+    padding: 0 0.7rem 10rem 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .help__list {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+}
 .help__list_item {
-  padding: 6rem 6rem 0;
+  padding: 5.7rem 6rem 0;
   display: block;
   text-align: center;
 }
 .help__list_item h4 {
   margin-top: 2.6rem;
+}
+@media (max-width: 767px) {
+  .help__list_item h4 {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1279px) {
+  .help__list_item {
+    width: 33%;
+    padding: 5.7rem 3rem 0 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .help__list_item {
+    width: 43.5%;
+    padding: 2.87rem 0 0 0;
+    padding: 2.87rem 0 0 0;
+  }
 }
 
 .pets {

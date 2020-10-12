@@ -39,6 +39,8 @@ html {
     @extend %font-add;
     @include font($size: 2rem, $height: 115%, $color: $color-dark-l);
     letter-spacing: 0.06em;
+    @include media-mobile {
+      @include font($size: 1.5rem, $height: 110%, $color: $color-dark-l);    }
   }
  h5 {
   @extend %font-add;

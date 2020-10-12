@@ -9,23 +9,51 @@
   &__text {
     text-align: center;
     margin-top: -1.8rem;
+    padding-bottom: 0.2rem;
     span {
       display: block;
     }
+    @include media-tablet {
+      padding-bottom: 0.4rem;
+    };
+    @include media-mobile {
+      margin-top: -5.6rem;
+      padding-bottom: 1.2rem;
+    };
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 2.45rem 10rem 2.65rem;
+    @include media-tablet {
+      padding: 0 0.7rem 10rem 0.7rem;
+    };
+    @include media-mobile {
+      justify-content: space-between;
+      padding-bottom: 4rem;
+    };
 
     &_item {
-      padding: 6rem 6rem 0;
+      padding: 5.7rem 6rem 0;
       display: block;
       text-align: center;
       h4 {
         margin-top: 2.6rem;
+        @include media-mobile {
+          margin-top: 2rem;
+
+        };
       }
+      @include media-tablet {
+        width: 33%;
+        padding: 5.7rem 3rem 0 3rem;
+      };
+      @include media-mobile {
+        width: 43.5%;
+        padding: 2.87rem 0 0 0;
+        padding: 2.87rem 0 0 0;
+      };
     }
   }
 
