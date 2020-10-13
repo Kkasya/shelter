@@ -4,13 +4,13 @@
 .donation {
   display: flex;
   justify-content: space-between;
-  padding: 8rem 14.2rem 9.7rem 14.2rem;
+  padding: 7.5rem 14.2rem 9.5rem 14.2rem;
   @include media-tablet {
     flex-direction: column-reverse;
     padding: 8.1rem 10rem 9.8rem 10rem;
   };
   @include media-mobile {
-    padding: 0;
+    padding: 4.2rem 0 0 0;
   };
 
   &__information {
@@ -36,7 +36,7 @@
   }
 
   &_img {
-    padding: 1.3rem 0 1.5rem;
+    padding: 1.5rem 0 1.5rem;
     @include media-tablet {
       padding: 0;
     };
@@ -46,7 +46,7 @@
   }
 
   h5 {
-    padding: 1.6rem 0 1.6rem;
+    padding: 1.6rem 0 1.4rem;
     @include media-tablet {
       padding: 2rem 0 2rem 0;
     };
@@ -55,7 +55,7 @@
     }
   }
   donation-description {
-    padding-top: 1.8rem;
+    padding-top: 1.5rem;
     @include media-tablet {
       padding: 2.2rem 0 6rem 0;
     };

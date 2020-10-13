@@ -3,7 +3,7 @@
 
   &__content {
     display: flex;
-    padding: 6.2rem 4.5rem 0 4.5rem;
+    padding: 6.2rem 4.5rem 0.25rem 4.5rem;
     @include media-mobile {
       padding-top: 4.2rem ;
       flex-flow: wrap;
@@ -81,7 +81,7 @@
 .slider {
   @include media-mobile {
     order: 1;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 
   }
 }
