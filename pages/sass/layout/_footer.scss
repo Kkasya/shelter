@@ -10,17 +10,33 @@
   display: flex;
   justify-content: space-between;
   padding-top: 4rem;
+  @include media-tablet {
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-left: 3.3rem;
+  }
   &__list {
     width: 26.1%;
+    @include media-tablet {
+      width: 45%;
+      padding-top: 1.5rem;
+    }
     &:nth-child(1) {
       padding-top: 1.6rem;
     }
     &:nth-child(2) {
       width: 26.7%;
       padding-top: 1.5rem;
+      @include media-tablet {
+        width: 50%;
+        padding-right: 2rem;
+      }
     }
     &:nth-child(3) {
      padding-left: 1.2rem;
+      @include media-tablet {
+        padding: 6rem 0 0 17rem;
+      }
     }
 
     &_item {
@@ -30,6 +46,9 @@
       padding-top: 0.4rem;
       >* {
         padding: 3.5rem 2rem 0 0;
+      }
+      @include media-tablet {
+        //justify-content: space-between;
       }
     }
   }

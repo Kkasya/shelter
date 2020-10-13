@@ -21,6 +21,9 @@
   flex-direction: column;
   align-items: center;
   padding-top: 8.1rem;
+  @include media-tablet {
+    padding-top: 7.7rem;
+  }
   @include media-mobile {
     padding-top: 3.8rem;
   }

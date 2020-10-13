@@ -20,9 +20,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: 6rem;
-  @include media-tablet {
-
-  };
 }
 .logo__title {
   @extend %font-add;

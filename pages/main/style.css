@@ -332,6 +332,7 @@ donation-description {
   justify-content: space-between;
   height: 6rem;
 }
+
 .logo__title {
   font-size: 3.2rem;
   font-weight: normal;
@@ -413,6 +414,11 @@ donation-description {
   align-items: center;
   padding-top: 8.1rem;
 }
+@media (max-width: 1279px) {
+  .pets__wrapper {
+    padding-top: 7.7rem;
+  }
+}
 @media (max-width: 767px) {
   .pets__wrapper {
     padding-top: 3.8rem;
@@ -430,9 +436,8 @@ donation-description {
 }
 @media (max-width: 1279px) {
   .start-screen__wrapper {
-    padding-top: 8.4rem;
+    padding-top: 8.5rem;
     flex-direction: column;
-    height: 1051px;
   }
 }
 @media (max-width: 767px) {
@@ -447,7 +452,7 @@ donation-description {
   justify-content: space-between;
   width: 46rem;
   height: 32.1rem;
-  margin-top: -4.4rem;
+  margin-top: -4.7rem;
 }
 @media (max-width: 767px) {
   .content {
@@ -459,16 +464,15 @@ donation-description {
 
 .start-screen-puppy {
   padding-top: 3.8rem;
-  margin-bottom: -3.5px;
+  margin-bottom: -2.5px;
 }
 @media (max-width: 1279px) {
   .start-screen-puppy {
+    padding-top: 10rem;
     margin-left: 13.5rem;
-    margin-bottom: 2.6rem;
   }
   .start-screen-puppy > * {
     height: 59.3rem;
-    margin-bottom: -3rem;
   }
 }
 @media (max-width: 767px) {
@@ -634,7 +638,7 @@ donation-description {
 }
 .pets__content {
   display: flex;
-  padding: 6.2rem 4.5rem 0.25rem 4.5rem;
+  padding: 6.2rem 0 0.25rem 0;
 }
 @media (max-width: 767px) {
   .pets__content {
@@ -819,8 +823,21 @@ donation-description {
   justify-content: space-between;
   padding-top: 4rem;
 }
+@media (max-width: 1279px) {
+  .footer-section {
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-left: 3.3rem;
+  }
+}
 .footer-section__list {
   width: 26.1%;
+}
+@media (max-width: 1279px) {
+  .footer-section__list {
+    width: 45%;
+    padding-top: 1.5rem;
+  }
 }
 .footer-section__list:nth-child(1) {
   padding-top: 1.6rem;
@@ -829,8 +846,19 @@ donation-description {
   width: 26.7%;
   padding-top: 1.5rem;
 }
+@media (max-width: 1279px) {
+  .footer-section__list:nth-child(2) {
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
 .footer-section__list:nth-child(3) {
   padding-left: 1.2rem;
+}
+@media (max-width: 1279px) {
+  .footer-section__list:nth-child(3) {
+    padding: 6rem 0 0 17rem;
+  }
 }
 .footer-section__list_item {
   display: flex;
@@ -841,7 +869,6 @@ donation-description {
 .footer-section__list_item > * {
   padding: 3.5rem 2rem 0 0;
 }
-
 .second-section {
   padding-top: 0;
 }
