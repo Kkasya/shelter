@@ -15,14 +15,46 @@
     padding-top: 1.5rem;
     padding-left: 3.3rem;
   }
+  @include media-mobile {
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+
   &__list {
     width: 26.1%;
+
     @include media-tablet {
       width: 45%;
       padding-top: 1.5rem;
     }
+    @include media-mobile {
+      width: 87%;
+    }
+    h3 {
+      @include media-mobile {
+        text-align: center;
+        margin-left: -1rem;
+        padding-bottom: 3.8rem;
+      }
+    }
+    .phone {
+      padding-top: 0.4rem;
+      @include media-mobile {
+        padding: 0 0 0 0.5rem;
+      }
+    }
+
     &:nth-child(1) {
       padding-top: 1.6rem;
+      h3 {
+        padding-bottom: 0.5rem;
+        @include media-mobile {
+          padding-bottom: 0.1rem;
+        }
+      }
+      @include media-mobile {
+      margin-left: 2.5rem;
+      }
     }
     &:nth-child(2) {
       width: 26.7%;
@@ -31,11 +63,26 @@
         width: 50%;
         padding-right: 2rem;
       }
+      h3 {
+        @include media-mobile {
+          padding-left: 3rem;
+          padding-bottom: 0.2rem;
+        }
+      }
+
+      @include media-mobile {
+        width: 100%;
+        padding-top: 4rem;
+      }
     }
     &:nth-child(3) {
      padding-left: 1.2rem;
       @include media-tablet {
         padding: 6rem 0 0 17rem;
+      }
+      @include media-mobile {
+        padding: 4.2rem 0 0 2rem;
+        margin: 0
       }
     }
 
@@ -43,20 +90,22 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding-top: 0.4rem;
       >* {
-        padding: 3.5rem 2rem 0 0;
+        padding: 3.3rem 2rem 0 0;
+        @include media-mobile {
+          padding: 3.7rem 0 0 0;
+        }
       }
-      @include media-tablet {
-        //justify-content: space-between;
-      }
+
+      h4_footer {
+        @include media-mobile {
+          padding-left: 2rem;
+        }
     }
   }
 }
 
 .second-section {
  padding-top: 0;
-  >* {
-    margin-bottom: -0.7rem;
   }
 }
