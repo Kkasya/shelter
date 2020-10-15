@@ -44,8 +44,20 @@
   @include media-tablet {
     margin: 0 -5rem 10rem 0;
   }
-
-
+}
+.slider-button-pets-pets {
+  @extend %pagination-button;
+  @extend %font-add;
+  @include font($size: 2rem, $height: 115%, $color: $color-dark-3xl);
+  letter-spacing: 0.06em;
+  margin: 0 1rem 10rem 1rem;
+  @include media-tablet {
+     margin-top: -1.6rem;
+    margin-bottom: 7.4rem;
+  }
+  @include media-mobile {
+    margin: -1.8rem 0.5rem 4.2rem 0.5rem;
+  }
 }
 .pagination {
   &_active {

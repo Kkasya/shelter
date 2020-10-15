@@ -1,5 +1,5 @@
 .header {
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0 0.8rem 0;
   background: $color-light-xl;
   position: sticky;
   top: 0;
@@ -26,6 +26,9 @@
 }
 .navigation {
   display: flex;
+  @include media-mobile {
+    display: none;
+  };
 }
 .navigation__item {
   display: flex;
@@ -39,4 +42,14 @@
 .navigation__link_active {
   border-bottom: solid 0.3rem $color-primary;
   color: $color-dark-3xl;
+}
+
+
+%hamburger-line {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  background: black;
+  height: 2px;
+  width: 100%;
 }

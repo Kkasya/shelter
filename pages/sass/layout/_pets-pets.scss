@@ -1,4 +1,5 @@
 .pets {
+  background: $color-light-l;
   span {
     display: block;
   }
@@ -6,15 +7,55 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 6rem 2rem 0 2rem;
+    margin-top: 6rem;
     border-radius: 9px;
+    @include media-tablet {
+      margin: 3rem 6.4rem 0 6.4rem;
+    }
+    @include media-mobile {
+      margin: 3rem 1.5rem 0 1.5rem;
+    }
+
+
+
     &_item {
       display: flex;
       flex-direction: column;
       align-items: center;
       background: $color-light-s;
       border-radius: 9px;
-      margin: 0 2rem 3.3rem 2rem;
+      margin-bottom: 3.1rem;
+      @include media-tablet {
+        margin-bottom: 3rem;
+      }
+      @include media-mobile {
+        margin-bottom: 3.15rem;
+      }
+      &:last-child {
+        @include media-tablet {
+          display: none;
+        }
+      }
+      &:nth-last-child(2) {
+        @include media-tablet {
+          display: none;
+        }
+      }
+      &:nth-last-child(3) {
+        @include media-mobile {
+          display: none;
+        }
+      }
+      &:nth-last-child(4) {
+        @include media-mobile {
+          display: none;
+        }
+      }
+      &:nth-last-child(5) {
+        @include media-mobile {
+          display: none;
+        }
+      }
 
       &:hover {
         background: $color-light-xl;
@@ -22,11 +63,17 @@
       }
     }
     &_title {
-      margin: 2.8rem 0 3rem 0;
+      margin: 2.8rem 0 3.2rem 0;
     }
   }
   &__title {
     text-align: center;
+    @include media-tablet {
+      padding: 4.2rem 0 0.2rem 0;
+    }
+    @include media-mobile {
+      padding: 0.6rem 0 1.2rem 0;
+    }
   }
 }
 .pagination {

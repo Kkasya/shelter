@@ -54,3 +54,13 @@
   margin-left: 3rem;
   color: $color-dark-s;
 }
+
+
+%hamburger-line {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  background: $color-primary;
+  height: 2px;
+  width: 100%;
+}
