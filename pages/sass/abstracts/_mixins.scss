@@ -13,3 +13,9 @@
 @mixin media-mobile {
   @media (max-width: $mobile-width) { @content; }
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
