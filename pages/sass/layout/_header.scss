@@ -14,12 +14,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-mobile {
+   // display: contents;
+  }
 }
 .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 6rem;
+  margin-left: auto;
 }
 .logo__title {
   @extend %font-add;
@@ -45,14 +49,14 @@
   white-space: nowrap;
 }
 .navigation__link {
-  @include font($size: 1.5rem, $height: 160%, $color: $color-light-xl);
+  @include font($size: 1.5rem, $height: 160%, $color: $color-dark-s);
 }
 .navigation__link_active {
   border-bottom: solid 3px $color-primary;
+  color: $color-light-s;
 }
 .navigation__link_disabled {
   margin-left: 3rem;
-  color: $color-dark-s;
 }
 
 

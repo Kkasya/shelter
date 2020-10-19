@@ -1,4 +1,4 @@
-.logo__title, .slider-button-pets, pets-card-title, h5, h4_footer, h4, h3, h2, .button-secondary, .button-primary {
+.logo__title, .slider-button-pets-pets, .slider-button-pets, pets-card-title, h5, h4_footer, h4, h3, h2, .button-secondary, .button-primary {
   font-family: Georgia, Verdana, sans-serif;
 }
 
@@ -33,7 +33,7 @@
   outline: none;
 }
 
-.slider-button-pets {
+.slider-button-pets-pets, .slider-button-pets {
   border: 3px solid #F1CDB3;
   border-radius: 100%;
   background: none;
@@ -230,6 +230,27 @@ picture {
   }
 }
 
+.slider-button-pets-pets {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 115%;
+  color: #292929;
+  letter-spacing: 0.06em;
+  margin: 0 1rem 10rem 1rem;
+}
+@media (max-width: 1279px) {
+  .slider-button-pets-pets {
+    margin-top: -1.6rem;
+    margin-bottom: 7.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .slider-button-pets-pets {
+    margin: -1.8rem 0.5rem 4.2rem 0.5rem;
+  }
+}
+
 .pagination_number {
   background: #FDDCC4;
   border: 3px solid #FDDCC4;
@@ -275,15 +296,6 @@ picture {
   }
 }
 
-.hamburger__line, .hamburger:after, .hamburger:before {
-  content: " ";
-  display: inline-block;
-  position: absolute;
-  background: #F1CDB3;
-  height: 2px;
-  width: 100%;
-}
-
 .hamburger {
   display: none;
   position: relative;
@@ -293,6 +305,7 @@ picture {
 @media (max-width: 767px) {
   .hamburger {
     display: block;
+    order: 999;
     margin: 1px 43px 0 40px;
   }
 }
@@ -329,12 +342,12 @@ picture {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 6rem;
+  margin-left: auto;
 }
 
 .logo__title {
@@ -378,16 +391,25 @@ picture {
   font-weight: normal;
   font-style: normal;
   line-height: 160%;
-  color: #FFFFFF;
+  color: #CDCDCD;
 }
 
 .navigation__link_active {
   border-bottom: solid 3px #F1CDB3;
+  color: #FAFAFA;
 }
 
 .navigation__link_disabled {
   margin-left: 3rem;
-  color: #CDCDCD;
+}
+
+.hamburger:before, .hamburger:after, .hamburger__line {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  background: #F1CDB3;
+  height: 2px;
+  width: 100%;
 }
 
 .wrapper {
@@ -418,14 +440,26 @@ picture {
   align-items: center;
   padding-top: 8.1rem;
 }
-@media (max-width: 1279px) {
-  .pets__wrapper {
-    padding-top: 7.7rem;
-  }
-}
 @media (max-width: 767px) {
   .pets__wrapper {
     padding-top: 3.8rem;
+  }
+}
+
+.pets__wrapper-pets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.1rem;
+}
+@media (max-width: 1279px) {
+  .pets__wrapper-pets {
+    padding-top: 3.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .pets__wrapper-pets {
+    padding-top: 3.6rem;
   }
 }
 

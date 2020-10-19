@@ -5,6 +5,7 @@
   height: 22px;
   @include media-mobile {
     display: block;
+    order: 999;
     margin: 1px 43px 0 40px;
 
   };
