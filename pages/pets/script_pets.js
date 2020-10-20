@@ -1,6 +1,5 @@
-//main header
+//header
 
-const logo = document.querySelector('.logo');
 const menu = document.querySelector('.navigation');
 menu.querySelectorAll('li');
 
@@ -15,23 +14,25 @@ menu.addEventListener('click', (e) => {
 
 
 
-
 //burger menu
 const hamburger = document.querySelector('.hamburger'),
-        hamburger_top = document.querySelector('.hamburger_top'),
-        navigation = document.querySelector('.navigation'),
-        navigationItem = document.querySelectorAll('.navigation__item')
-        header = document.querySelector('.header__wrapper'),
-        startScreen = document.querySelector('.start-screen');
-        hamburger__line_top = document.querySelector('.hamburger__line_top'),
-        body = document.querySelector('body');
+    hamburger_top = document.querySelector('.hamburger_top'),
+    navigation = document.querySelector('.navigation'),
+    navigationItem = document.querySelectorAll('.navigation__item'),
+    headerColor = document.querySelector('.header'),
+
+    header = document.querySelector('.header-pets__wrapper'),
+    nextScreen = document.querySelector('.pets');
+    hamburger__line_top = document.querySelector('.hamburger__line_top'),
+    body = document.querySelector('body');
 
 
 hamburger.addEventListener('click', () => {
+    headerColor.classList.remove('header');
     header.classList.add('subMenu');
     hamburger_top.classList.add('hamburger_sub');
     hamburger_top.classList.remove('hamburger_top');
-        startScreen.classList.add('margin-top');
+    nextScreen.classList.add('margin-top');
     header.classList.add('open');
     body.classList.add('menu');
     setTimeout( () => {
@@ -45,19 +46,21 @@ hamburger.addEventListener('click', () => {
 
 const closeSubMenu = () => {
     header.classList.add('close');
-    header.classList.add('header');
     hamburger_top.classList.remove('hamburger_top');
     header.classList.remove('open');
     hamburger_top.classList.add('rotated');
     setTimeout( () => {
         hamburger_top.classList.add('hamburger_top');
         header.classList.remove('subMenu');
-        body.classList.remove('menu');
         header.classList.remove('close');
-        startScreen.classList.remove('margin-top');
     }, 700);
 
     hamburger_top.classList.remove('rotated');
+    setTimeout( () => {
+        body.classList.remove('menu');
+        nextScreen.classList.remove('margin-top');
+        headerColor.classList.add('header');
+    }, 700);
 };
 
 document.addEventListener('click', e => {
@@ -68,8 +71,9 @@ document.addEventListener('click', e => {
 
     let itsHamburger = target == hamburger__line_top;
     console.log(target == hamburger__line_top);
-   if (body.classList.contains('menu') && (!itsMenu || itsHamburger)) {
-       closeSubMenu();
-   }
+
+    if (body.classList.contains('menu') && (!itsMenu || itsHamburger)) {
+        closeSubMenu();
+    }
 })
 

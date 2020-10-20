@@ -3,16 +3,24 @@
   background: $color-light-xl;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
-.header__wrapper {
+.header-pets__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  a {
+    display: block;
+  }
 }
+
 .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include media-mobile {
+    margin-left: auto;
+}
 }
 .logo__title {
   @extend %font-add;
@@ -45,11 +53,103 @@
 }
 
 
+.hamburger_top {
+  display: none;
+}
+
+.subMenu {
+  position: relative;
+  display: block;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100%;
+  background: $color-dark-3xl;
+  z-index: 5;
+  .logo {
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 3.33%;
+    &__title {
+     color:  $color-primary;
+    }
+
+    &__subtitle {
+      color:   $color-light-xl;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .header__navigation {
+    .navigation {
+      position: absolute;
+      top: 22rem;
+      left: 16rem;
+      display: flex;
+      flex-direction: column;
+      z-index: 9;
+
+      .navigation__item {
+        position: relative;
+        display: flex;
+        white-space: nowrap;
+        margin: 2rem 0;
+        transform: translateX(-50%);
+        cursor: pointer;
+        justify-content: center;
+        .navigation__link {
+          @include font($size: 3.2rem, $height: 160%, $color: $color-dark-s);
+        }
+        .navigation__link_active {
+          border-bottom: solid 3px $color-primary;
+          color: $color-light-s;
+        }
+      }
+
+    }
+  }
+
+}
+.open {
+  transform: translateX(-320px);
+  left: 100%;
+  transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+}
+
+.close {
+  left: 40%;
+  transform: translateX(100%);
+  transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+}
+
+.rotated {
+  transform: rotate(90deg);
+  transition: transform 1s;
+}
+
+
+
 %hamburger-line {
   content: " ";
-  display: inline-block;
+  display: block;
   position: absolute;
   background: black;
   height: 2px;
   width: 100%;
+}
+%hamburger-line_top {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: $color-primary;
+  height: 2px;
+  width: 30px;
 }
