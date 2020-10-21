@@ -1,0 +1,142 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 10;
+  padding-top: 10rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.6);
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-header {
+  position: absolute;
+  top:15%;
+  left: 18%;
+  width: 95.2rem;
+  height: 55.2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 11;
+  @include media-tablet {
+    width: 68.2rem;
+    height: 40.2rem;
+    top:5%;
+    left: 8%;
+  }
+  @include media-mobile {
+    width: 27rem;
+    height: 39.3rem;
+  }
+}
+
+.modal-content {
+  position: absolute;
+  top:54%;
+  left: 47%;
+  padding: 0;
+  border: 1px solid #888;
+  width: 90rem;
+
+  transform: translate(-50%,-50%);
+  background: #FAFAFA;
+  border-radius: 9px;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+
+  display: flex;
+  justify-content: space-between;
+
+  @include media-tablet {
+    width: 63rem;
+  }
+  @include media-mobile {
+    width: 24rem;
+    top: 66%;
+  }
+}
+
+.modal_info {
+  margin: 5rem 1.9rem 8.8rem 2.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  @include media-tablet {
+    margin: 1rem 0.8rem 3.7rem 1.1rem;
+  }
+  @include media-mobile {
+    margin: 1rem;
+  }
+
+
+  &__pet {
+    @include media-mobile {
+      margin-left: 1rem;
+    }
+    li {
+      color: $color-primary;
+      padding-top: 1rem;
+    }
+  }
+
+}
+.bold {
+  font-weight: bold;
+}
+
+.modal_img img{
+  border-radius: 9px 0px 0px 9px;
+  width: 50rem;
+  height: 50rem;
+  @include media-tablet {
+    width: 35rem;
+    height: 35rem;
+  }
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.modal_info__name,
+.modal_info__type {
+  padding-bottom: 1rem;
+  @include media-mobile {
+    text-align: center;
+  }
+}
+
+.closeBtnModal {
+  position: absolute;
+  top:0;
+  right: 0;
+  color: #292929;
+  width: 5.2rem;
+  height: 5.2rem;
+  border: 2px solid $color-primary;
+  border-radius: 100%;
+  font-size: 3rem;
+  img {
+    margin: 1.8rem;
+
+  }
+}
+
+.closeBtnModal:hover,
+.closeBtnModal:focus {
+  text-decoration: none;
+  cursor: pointer;
+  background: #f5f0f0;
+}
+
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

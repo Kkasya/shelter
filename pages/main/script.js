@@ -62,14 +62,12 @@ const closeSubMenu = () => {
 
 document.addEventListener('click', e => {
     let target = e.target;
-    console.log(target);
     let itsMenu = target == header || header.contains(target);
-    console.log(header.contains(target));
-
     let itsHamburger = target == hamburger__line_top;
-    console.log(target == hamburger__line_top);
    if (body.classList.contains('menu') && (!itsMenu || itsHamburger)) {
        closeSubMenu();
    }
 })
+
+
 
