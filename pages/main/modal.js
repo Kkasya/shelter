@@ -129,8 +129,6 @@ function getCards (name) {
 
 
 function windowOnClick(event) {
-    console.log(event.target);
-    //console.log(event.target.classList.contains('modalHeader'));
     if (event.target.classList.contains('show-modal') || event.target.classList.contains('modal-header')) {
         toggleModal();
     }
