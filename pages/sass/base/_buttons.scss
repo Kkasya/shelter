@@ -18,13 +18,14 @@
 .slider-button {
   @extend %arrow;
   @include media-mobile {
-    margin: 2rem 4rem 0 4rem;
+    margin: 2rem 2rem 0 0;
+    float: right;
   }
   &_reverse {
     @extend %arrow;
     transform: rotate(180deg);
     @include media-mobile {
-      margin: 2rem 4rem 0 4rem;
+      margin: 2rem 0 0 2rem;
     }
     &:hover {
       @extend %hover-button;

@@ -1,5 +1,4 @@
 let fullPetsList = [];
-let names = [];
 
 
 
@@ -80,7 +79,6 @@ const prev = document.querySelector('.prev');
 const nextEnd = document.querySelector('.next-end');
 const next = document.querySelector('.next');
 
-console.log(petsCardsItems[0].children[0]);
 let currentPage = 1;
 let itemsLimit = 8;
 
@@ -115,6 +113,7 @@ const active = (button) => {
 }
 
 createPets();
+
 next.addEventListener('click', () => {
     currentPage++;
     if (currentPage === (fullPetsList.length / itemsLimit)) {
@@ -161,5 +160,4 @@ prevEnd.addEventListener('click', () => {
     createPets();
 });
 
-console.log(fullPetsList);
 

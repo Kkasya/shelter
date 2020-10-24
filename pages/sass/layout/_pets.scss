@@ -27,9 +27,7 @@
       padding: 0 1.2rem 0 1.2rem;
     }
     @include media-mobile {
-       //padding-bottom: 10rem;
     };
-
 
     &_item {
       display: flex;
@@ -80,9 +78,15 @@
     }
   }
 .slider {
+  @media (max-width: 766px) {
+    order: 1;
+    margin-bottom: 6rem;
+  }
   @include media-mobile {
     order: 1;
     margin-bottom: 6rem;
+    width: 48%;
+
 
   }
 }

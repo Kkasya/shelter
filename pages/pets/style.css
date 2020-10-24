@@ -232,7 +232,8 @@ picture {
 
 @media (max-width: 767px) {
   .slider-button {
-    margin: 2rem 4rem 0 4rem;
+    margin: 2rem 2rem 0 0;
+    float: right;
   }
 }
 .slider-button_reverse {
@@ -240,7 +241,7 @@ picture {
 }
 @media (max-width: 767px) {
   .slider-button_reverse {
-    margin: 2rem 4rem 0 4rem;
+    margin: 2rem 0 0 2rem;
   }
 }
 .slider-button-pets {
