@@ -13,9 +13,12 @@ const checkItemsLimitSlider = () => {
 const createPetsSlider = () => {
     let j = 0;
     checkItemsLimitSlider();
-    console.log(currentPage);
-    console.log(fullPetsList);
+    if ( itemsLimit === 1 && petsCardsItems[j].children[1].textContent == fullPetsList[currentPage-1].name) {
+        currentPage = 1;
+    }
+
     for (let i = (currentPage - 1) * itemsLimit; i < (currentPage - 1) * itemsLimit + itemsLimit; i++) {
+
         petsCardsItems[j].children[0].src = fullPetsList[i].img;
         petsCardsItems[j].children[1].textContent = fullPetsList[i].name;
         j++;
@@ -25,14 +28,21 @@ const createPetsSlider = () => {
 
 rightArrow.addEventListener('click', () => {
     currentPage++;
+    petsCardsItems.forEach(card => { card.classList.remove('animation')});
+    void rightArrow.offsetWidth;
+    petsCardsItems.forEach(card => { card.classList.add('animation')});
     if (currentPage === (fullPetsList.length / itemsLimit) + 1) {
         currentPage = 1;
     }
     createPetsSlider();
+
 });
 
 leftArrow.addEventListener('click', () => {
     currentPage--;
+    petsCardsItems.forEach(card => { card.classList.remove('animation')});
+    void rightArrow.offsetWidth;
+    petsCardsItems.forEach(card => { card.classList.add('animation')});
     if (currentPage === 0) {
         currentPage = fullPetsList.length / itemsLimit;
     }

@@ -13,31 +13,39 @@
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
+$w: 95.2rem;
+$h: 55.2rem;
 .modal-header {
   position: absolute;
-  top:15%;
-  left: 18%;
-  width: 95.2rem;
-  height: 55.2rem;
+  top:calc(50% - #{.5*$h} - 2.6rem);
+  left: calc(50% - #{.5*$w} + 2.6rem);
+  width: $w;
+  height: $h;
   display: flex;
   flex-direction: column;
   z-index: 11;
   @include media-tablet {
-    width: 68.2rem;
-    height: 40.2rem;
-    top:5%;
-    left: 8%;
+    $w: 68.2rem;
+    $h: 40.2rem;
+    width: $w;
+    height: $h;
+    top:calc(50% - #{.5*$h} - 2.6rem);
+    left: calc(50% - #{.5*$w} + 2.6rem);
   }
   @include media-mobile {
-    width: 27rem;
-    height: 39.3rem;
+    $w: 27rem;
+    $h: 39.3rem;
+    width: $w;
+    height: $h;
+    top:calc(50% - #{.5*$h} - 2.6rem);
+    left: calc(50% - #{.5*$w} + 2.6rem);
   }
 }
 
 .modal-content {
   position: absolute;
-  top:54%;
-  left: 47%;
+  top:calc(50% + 2.6rem);
+  left: calc(50% - 2.6rem);
   padding: 0;
   border: 1px solid #888;
   width: 90rem;
@@ -67,7 +75,7 @@
 
 
   @include media-tablet {
-    margin: 1rem 0.8rem 3.7rem 1.1rem;
+    margin: 1rem 0.8rem 2rem 1.1rem;
   }
   @include media-mobile {
     margin: 1rem;
@@ -139,4 +147,8 @@
   visibility: visible;
   transform: scale(1.0);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.windowCloseBtnModal {
+  background: #f5f0f0;
 }

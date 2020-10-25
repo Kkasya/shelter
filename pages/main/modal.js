@@ -101,7 +101,6 @@ const modal = document.querySelector('.modal'),
     modalInfoName = document.querySelector('.modal_info__name'),
     modalInfoType = document.querySelector('.modal_info__type'),
     modalInfoDescription = document.querySelector('.modal_info__description'),
-    //modalInfoPet = document.querySelector('.modal_info__pet'),
     modalInfoAge = document.querySelector('.modal_info__pet_age-text'),
     modalInfoInoculations = document.querySelector('.modal_info__pet_inoculations-text'),
     modalInfoDiseases = document.querySelector('.modal_info__pet_diseases-text'),
@@ -131,19 +130,34 @@ function getCards (name) {
 function windowOnClick(event) {
     if (event.target.classList.contains('show-modal') || event.target.classList.contains('modal-header')) {
         toggleModal();
+        body.classList.remove('body-hidden');
     }
 }
 
 petsCards.forEach(card => {
     card.addEventListener('click', (event) => {
         toggleModal();
+        body.classList.add('body-hidden');
         getCards(event.target.parentNode.children[1].innerHTML);
 
 
     });
 });
 
-closeBtnModal.addEventListener('click', toggleModal);
+closeBtnModal.addEventListener('click', () => {
+    toggleModal();
+    body.classList.remove('body-hidden');
+});
 
 window.addEventListener('click', windowOnClick);
+window.addEventListener('mouseover', (e) => {
+    if (event.target.classList.contains('show-modal') || event.target.classList.contains('modal-header')) {
+        closeBtnModal.classList.add('windowCloseBtnModal');
+    }
+});
+window.addEventListener('mouseout', (e) => {
+    if (event.target.classList.contains('show-modal') || event.target.classList.contains('modal-header')) {
+        closeBtnModal.classList.remove('windowCloseBtnModal');
+    }
+});
 

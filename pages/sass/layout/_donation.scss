@@ -7,6 +7,7 @@
   padding: 7.5rem 14.2rem 9.5rem 14.2rem;
   @include media-tablet {
     flex-direction: column-reverse;
+    align-items: center;
     padding: 8.1rem 10rem 9.8rem 10rem;
   };
   @include media-mobile {

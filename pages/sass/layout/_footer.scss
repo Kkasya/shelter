@@ -18,6 +18,9 @@
   @include media-mobile {
     padding-left: 0;
     padding-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__list {
@@ -28,19 +31,30 @@
       padding-top: 1.5rem;
     }
     @include media-mobile {
-      width: 87%;
+      width: 100%;
     }
     h3 {
       @include media-mobile {
         text-align: center;
-        margin-left: -1rem;
         padding-bottom: 3.8rem;
       }
     }
+      picture {
+        @include media-tablet {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        @include media-mobile {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
     .phone {
       padding-top: 0.4rem;
       @include media-mobile {
-        padding: 0 0 0 0.5rem;
+        padding: 0;
       }
     }
 
@@ -52,16 +66,16 @@
           padding-bottom: 0.1rem;
         }
       }
-      @include media-mobile {
-      margin-left: 2.5rem;
-      }
     }
     &:nth-child(2) {
       width: 26.7%;
       padding-top: 1.5rem;
       @include media-tablet {
-        width: 50%;
-        padding-right: 2rem;
+        width: 47%;
+      }
+      @include media-mobile {
+        width: 100%;
+        padding-right: 0;
       }
       h3 {
         @include media-mobile {
@@ -71,18 +85,18 @@
       }
 
       @include media-mobile {
-        width: 100%;
         padding-top: 4rem;
       }
     }
     &:nth-child(3) {
      padding-left: 1.2rem;
       @include media-tablet {
-        padding: 6rem 0 0 17rem;
+        padding: 6rem 0 0 0;
+        width: 100%;
       }
       @include media-mobile {
-        padding: 4.2rem 0 0 2rem;
-        margin: 0
+        padding: 4.2rem 0 0 0;
+        margin: auto;
       }
     }
 
@@ -90,6 +104,14 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      @include media-mobile {
+        align-content: center;
+        justify-self: center;
+        justify-items: center;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+      }
       >* {
         padding: 3.3rem 2rem 0 0;
         @include media-mobile {
@@ -107,5 +129,10 @@
 
 .second-section {
  padding-top: 0;
-  }
+ img {
+   @include media-mobile {
+     padding-left: 1.8rem;
+   }
+ }
+ }
 }

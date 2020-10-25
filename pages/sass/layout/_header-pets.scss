@@ -52,7 +52,9 @@
   color: $color-dark-3xl;
 }
 
-
+.none {
+  cursor: default;
+}
 .hamburger_top {
   display: none;
 }
@@ -135,7 +137,10 @@
   transition: transform 1s;
 }
 
-
+.rotated2 {
+  transform: rotate(180deg);
+  transition: transform 0.6s;
+}
 
 %hamburger-line {
   content: " ";

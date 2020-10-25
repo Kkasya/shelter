@@ -28,6 +28,7 @@ const hamburger = document.querySelector('.hamburger'),
 
 
 hamburger.addEventListener('click', () => {
+    body.classList.add('body-hidden');
     headerColor.classList.remove('header');
     header.classList.add('subMenu');
     hamburger_top.classList.add('hamburger_sub');
@@ -35,6 +36,8 @@ hamburger.addEventListener('click', () => {
     nextScreen.classList.add('margin-top');
     header.classList.add('open');
     body.classList.add('menu');
+    hamburger_top.classList.add('rotated');
+
     setTimeout( () => {
         hamburger_top.classList.add('rotated');
     }, 500);
@@ -45,18 +48,17 @@ hamburger.addEventListener('click', () => {
 
 
 const closeSubMenu = () => {
+    body.classList.remove('body-hidden');
     header.classList.add('close');
     hamburger_top.classList.remove('hamburger_top');
     header.classList.remove('open');
-    hamburger_top.classList.add('rotated');
+    hamburger_top.classList.add('rotated2');
     setTimeout( () => {
+        hamburger_top.classList.remove('rotated');
+        hamburger_top.classList.remove('rotated2');
         hamburger_top.classList.add('hamburger_top');
         header.classList.remove('subMenu');
         header.classList.remove('close');
-    }, 700);
-
-    hamburger_top.classList.remove('rotated');
-    setTimeout( () => {
         body.classList.remove('menu');
         nextScreen.classList.remove('margin-top');
         headerColor.classList.add('header');
@@ -67,8 +69,8 @@ document.addEventListener('click', e => {
     let target = e.target;
     let itsMenu = target == header || header.contains(target);
     let itsHamburger = target == hamburger__line_top;
-
-    if (body.classList.contains('menu') && (!itsMenu || itsHamburger)) {
+    let itsHamburger2 = target == hamburger_top;
+    if (body.classList.contains('menu') && (!itsMenu || itsHamburger || itsHamburger2)) {
         closeSubMenu();
     }
 })

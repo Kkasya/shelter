@@ -1,23 +1,22 @@
 let fullPetsList = [];
 
 
+    fullPetsList = (() => {
+        let tempArr = [];
 
-fullPetsList = (() => {
-    let tempArr =[];
+        for (let i = 0; i < 6; i++) {
+            const newPets = pets;
 
-    for (let i = 0; i < 6; i++) {
-        const newPets = pets;
+            for (let j = pets.length; j > 0; j--) {
+                let randIndex = Math.floor(Math.random() * j);
+                const randElement = newPets.splice(randIndex, 1)[0];
+                newPets.push(randElement);
+            }
 
-        for (let j = pets.length; j > 0; j--) {
-            let randIndex = Math.floor(Math.random() * j);
-            const randElement = newPets.splice(randIndex,1)[0];
-            newPets.push(randElement);
+            tempArr = [...tempArr, ...newPets];
         }
-
-        tempArr = [...tempArr, ...newPets];
-    }
-    return tempArr;
-})();
+        return tempArr;
+    })();
 
 
 const sort6List = (list) => {
@@ -116,6 +115,8 @@ createPets();
 
 next.addEventListener('click', () => {
     currentPage++;
+    //petsCardsItems.forEach(card => { card.classList.add('animation')});
+    //void next.offsetWidth;
     if (currentPage === (fullPetsList.length / itemsLimit)) {
         disable(next);
         disable(nextEnd);
@@ -123,7 +124,8 @@ next.addEventListener('click', () => {
             active(prev);
             active(prevEnd);
         }
-        createPets();
+    createPets();
+   // setTimeout(petsCardsItems.forEach(card => { card.classList.toggle('animation')}), 2000);
 });
 
 nextEnd.addEventListener('click', () => {

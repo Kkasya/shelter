@@ -220,6 +220,10 @@ picture {
   display: block;
 }
 
+.body-hidden {
+  overflow: hidden;
+}
+
 .button-primary {
   background: #F1CDB3;
   border: none;
@@ -396,8 +400,8 @@ picture {
 
 .modal-header {
   position: absolute;
-  top: 15%;
-  left: 18%;
+  top: calc(50% - 27.6rem - 2.6rem);
+  left: calc(50% - 47.6rem + 2.6rem);
   width: 95.2rem;
   height: 55.2rem;
   display: flex;
@@ -408,21 +412,23 @@ picture {
   .modal-header {
     width: 68.2rem;
     height: 40.2rem;
-    top: 5%;
-    left: 8%;
+    top: calc(50% - 20.1rem - 2.6rem);
+    left: calc(50% - 34.1rem + 2.6rem);
   }
 }
 @media (max-width: 767px) {
   .modal-header {
     width: 27rem;
     height: 39.3rem;
+    top: calc(50% - 19.65rem - 2.6rem);
+    left: calc(50% - 13.5rem + 2.6rem);
   }
 }
 
 .modal-content {
   position: absolute;
-  top: 54%;
-  left: 47%;
+  top: calc(50% + 2.6rem);
+  left: calc(50% - 2.6rem);
   padding: 0;
   border: 1px solid #888;
   width: 90rem;
@@ -453,7 +459,7 @@ picture {
 }
 @media (max-width: 1279px) {
   .modal_info {
-    margin: 1rem 0.8rem 3.7rem 1.1rem;
+    margin: 1rem 0.8rem 2rem 1.1rem;
   }
 }
 @media (max-width: 767px) {
@@ -532,6 +538,10 @@ picture {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+.windowCloseBtnModal {
+  background: #f5f0f0;
+}
+
 .header {
   padding: 3rem 0 0.8rem 0;
   background: #FFFFFF;
@@ -606,6 +616,10 @@ picture {
 .navigation__link_active {
   border-bottom: solid 0.3rem #F1CDB3;
   color: #292929;
+}
+
+.none {
+  cursor: default;
 }
 
 .hamburger_top {
@@ -685,6 +699,11 @@ picture {
 .rotated {
   transform: rotate(90deg);
   transition: transform 1s;
+}
+
+.rotated2 {
+  transform: rotate(180deg);
+  transition: transform 0.6s;
 }
 
 .hamburger:before, .hamburger:after, .hamburger__line {
@@ -783,6 +802,9 @@ picture {
   .footer-section {
     padding-left: 0;
     padding-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 .footer-section__list {
@@ -796,14 +818,26 @@ picture {
 }
 @media (max-width: 767px) {
   .footer-section__list {
-    width: 87%;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
   .footer-section__list h3 {
     text-align: center;
-    margin-left: -1rem;
     padding-bottom: 3.8rem;
+  }
+}
+@media (max-width: 1279px) {
+  .footer-section__list picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section__list picture {
+    display: flex;
+    justify-content: center;
   }
 }
 .footer-section__list .phone {
@@ -811,7 +845,7 @@ picture {
 }
 @media (max-width: 767px) {
   .footer-section__list .phone {
-    padding: 0 0 0 0.5rem;
+    padding: 0;
   }
 }
 .footer-section__list:nth-child(1) {
@@ -825,19 +859,19 @@ picture {
     padding-bottom: 0.1rem;
   }
 }
-@media (max-width: 767px) {
-  .footer-section__list:nth-child(1) {
-    margin-left: 2.5rem;
-  }
-}
 .footer-section__list:nth-child(2) {
   width: 26.7%;
   padding-top: 1.5rem;
 }
 @media (max-width: 1279px) {
   .footer-section__list:nth-child(2) {
-    width: 50%;
-    padding-right: 2rem;
+    width: 47%;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section__list:nth-child(2) {
+    width: 100%;
+    padding-right: 0;
   }
 }
 @media (max-width: 767px) {
@@ -848,7 +882,6 @@ picture {
 }
 @media (max-width: 767px) {
   .footer-section__list:nth-child(2) {
-    width: 100%;
     padding-top: 4rem;
   }
 }
@@ -857,19 +890,30 @@ picture {
 }
 @media (max-width: 1279px) {
   .footer-section__list:nth-child(3) {
-    padding: 6rem 0 0 17rem;
+    padding: 6rem 0 0 0;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
   .footer-section__list:nth-child(3) {
-    padding: 4.2rem 0 0 2rem;
-    margin: 0;
+    padding: 4.2rem 0 0 0;
+    margin: auto;
   }
 }
 .footer-section__list_item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .footer-section__list_item {
+    align-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 .footer-section__list_item > * {
   padding: 3.3rem 2rem 0 0;
@@ -886,6 +930,11 @@ picture {
 }
 .footer-section .second-section {
   padding-top: 0;
+}
+@media (max-width: 767px) {
+  .footer-section .second-section img {
+    padding-left: 1.8rem;
+  }
 }
 
 .pets {
@@ -928,6 +977,7 @@ picture {
 }
 @media (max-width: 767px) {
   .pets__cards_item {
+    width: 100%;
     margin-bottom: 3.15rem;
   }
 }
