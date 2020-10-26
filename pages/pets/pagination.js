@@ -1,8 +1,9 @@
 let fullPetsList = [];
+let sliderList = [];
 
 
-    fullPetsList = (() => {
-        let tempArr = [];
+const getFullPetsList = () => {
+    fullPetsList = [];
 
         for (let i = 0; i < 6; i++) {
             const newPets = pets;
@@ -13,15 +14,15 @@ let fullPetsList = [];
                 newPets.push(randElement);
             }
 
-            tempArr = [...tempArr, ...newPets];
+            fullPetsList = [...fullPetsList, ...newPets];
         }
-        return tempArr;
-    })();
+    };
 
+getFullPetsList();
 
 const sort6List = (list) => {
     const length = list.length;
-
+    sliderList = list;
     for (let i = 0; i < (length / 6); i++) {
         const stepList = list.slice(i * 6, (i * 6) + 6);
 
@@ -39,10 +40,12 @@ const sort6List = (list) => {
             }
         }
     }
+
     return list;
 }
 
 const sort863 = (list) => {
+
     let unique8List = [];
     const length = list.length;
 
@@ -67,6 +70,8 @@ const sort863 = (list) => {
 
     return list;
 }
+
+
 
 fullPetsList = sort863(fullPetsList);
 
@@ -102,12 +107,14 @@ const createPets = () => {
 const disable = (button) => {
     button.classList.remove('pagination_active');
     button.classList.add('pagination_disabled');
+    button.classList.add('none');
     button.setAttribute('disabled', true);
 }
 
 const active = (button) => {
     button.classList.add('pagination_active');
     button.classList.remove('pagination_disabled');
+    button.classList.remove('none');
     button.removeAttribute('disabled');
 }
 
